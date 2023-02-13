@@ -20,7 +20,7 @@ jobs:
       run: mvn test --file pom.xml
     - name: Run testsigma Automation suite
       run: |
-        chmod +x run_smoke_tests.sh.sh
+        chmod +x run_smoke_tests.sh
         ./run_smoke_tests.sh
     - name: upload all test files
       uses: actions/upload-artifact@v2
