@@ -20,7 +20,7 @@ jobs:
       run: mvn test --file pom.xml
     - name: Run testsigma Automation suite
       run: |
-        cd ${{ github.workspace }}/testsigma
+        #cd ${{ github.workspace }}/testsigma
         chmod +x runsmoketests.sh
         ./runsmoketests.sh
     - name: upload all test files
