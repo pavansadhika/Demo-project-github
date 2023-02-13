@@ -9,6 +9,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: build artifacts
+      run: mvn clean package
     - name:  Install Google Chrome # Using shell script to install Google Chrome
       run:   |
               chmod +x ./scripts/InstallChrome.sh
