@@ -21,7 +21,7 @@
 #
 #********START USER_INPUTS*********
 TESTSIGMA_API_KEY=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZjdmOWYzMS1hYmQ0LTQzYjUtODQ5OC0wNGQ0NDgxOGJjMTAiLCJkb21haW4iOiJnbWFpbC5jb20iLCJ0ZW5hbnRJZCI6NDYwMDV9.NI8uPN9NRjbuDn72Pbb8E4i1e7JfEsKNKYcSylqRkBMwJoFbtghZ3uLb4eSUN8hgactcebfx30jUnkTpQJNh2g
-TESTSIGMA_TEST_PLAN_ID=179
+TESTSIGMA_TEST_PLAN_ID=303
 MAX_WAIT_TIME_FOR_SCRIPT_TO_EXIT=10
 JUNIT_REPORT_FILE_PATH=./junit-report-$(date +"%Y%m%d%H%M").xml
 RUNTIME_DATA_INPUT="url=http://alb-208296927.us-east-1.elb.amazonaws.com/webapp/"
@@ -76,8 +76,8 @@ for i in "$@"
     echo " [-d | --runtimedata] = <OPTIONAL COMMA SEPARATED KEY VALUE PAIRS>"
     echo " [-b | --buildno] = <BUILD_NO_IF_ANY>"
  
-    printf "Example:\n bash testsigma_cicd.sh --apikey=YSWfniLEWYK7aLrS-FhYUD1kO0MQu9renQ0p-oyCXMlQ --testplanid=230 --maxtimeinmins=180 --reportfilepath=./junit-report.xml \n\n"
-    printf "With Runtimedata parameters:\n bash testsigma_cicd.sh --apikey=YSWfniLEWYK7aLrS-FhYUD1kO0MQu9renQ0p-oyCXMlQ --testplanid=230 --maxtimeinmins=180
+    printf "Example:\n bash testsigma_cicd.sh --apikey=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZjdmOWYzMS1hYmQ0LTQzYjUtODQ5OC0wNGQ0NDgxOGJjMTAiLCJkb21haW4iOiJnbWFpbC5jb20iLCJ0ZW5hbnRJZCI6NDYwMDV9.NI8uPN9NRjbuDn72Pbb8E4i1e7JfEsKNKYcSylqRkBMwJoFbtghZ3uLb4eSUN8hgactcebfx30jUnkTpQJNh2g --testplanid=303 --maxtimeinmins=180 --reportfilepath=./junit-report.xml \n\n"
+    printf "With Runtimedata parameters:\n bash testsigma_cicd.sh --apikey=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZjdmOWYzMS1hYmQ0LTQzYjUtODQ5OC0wNGQ0NDgxOGJjMTAiLCJkb21haW4iOiJnbWFpbC5jb20iLCJ0ZW5hbnRJZCI6NDYwMDV9.NI8uPN9NRjbuDn72Pbb8E4i1e7JfEsKNKYcSylqRkBMwJoFbtghZ3uLb4eSUN8hgactcebfx30jUnkTpQJNh2g --testplanid=230 --maxtimeinmins=180
     --reportfilepath=./junit-report.xml --runtimedata=\"buildurl=http://test1.url.com,data1=testdata\" --buildno=773\n\n"
  
     shift
