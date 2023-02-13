@@ -13,16 +13,15 @@ jobs:
     - name: build artifacts
       run: mvn clean package
     - name:  Install Google Chrome # Using shell script to install Google Chrome
-      run:   |
-              chmod +x ./scripts/InstallChrome.sh
-              ./scripts/InstallChrome.sh 
+      run: |
+          chmod +x ./scripts/InstallChrome.sh
+          ./scripts/InstallChrome.sh 
     - name: Build with Maven
       run: mvn test --file pom.xml
     - name: Run testsigma Automation suite
       run: |
-        #cd ${{ github.workspace }}/testsigma
-        chmod +x runsmoketests.sh
-        ./runsmoketests.sh
+        chmod +x run_smoke_tests.sh.sh
+        ./run_smoke_tests.sh
     - name: upload all test files
       uses: actions/upload-artifact@v2
       with:
